@@ -239,8 +239,8 @@ window.onload = function() {
 					ctx.clearRect(0, 0, canvas.clientWidth, canvas.clientHeight)
 					for(var i = 0; i < arr.length; i++) {
 						arr[i].deg += 5
-						arr[i].x = arr[i].startX + Math.sin(arr[i].deg * Math.PI / 180) * arr[i].step * 2
-						arr[i].y = arr[i].startY - (arr[i].deg * Math.PI / 180) * arr[i].step / 2
+						arr[i].x = arr[i].startX + Math.sin(arr[i].deg * Math.PI / 180) * arr[i].step
+						arr[i].y = arr[i].startY - (arr[i].deg * Math.PI / 180) * arr[i].step
 						if(arr[i].y < 20) {
 							arr.splice(i, 1)
 						}
